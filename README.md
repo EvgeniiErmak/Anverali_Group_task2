@@ -1,5 +1,3 @@
----
-
 # Anverali_Group_task2
 
 Это второй проект в рамках задачи для Anverali Group. Проект представляет собой веб-приложение для регистрации пользователей в двух категориях: заказчиков (Customers) и подрядчиков (Contractors).
@@ -90,5 +88,3 @@ poetry run python manage.py runserver
 Телефон: +7 930-290-99-80
 Telegram: [@DJErmak3000](https://t.me/DJErmak3000)
 Email: [ew.ermak5000@mail.ru](mailto:ew.ermak5000@mail.ru)
-
----
