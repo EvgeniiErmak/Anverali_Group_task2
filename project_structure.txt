@@ -1,0 +1,38 @@
+├── Anverali_Group_task2
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── README.md
+├── contractor
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── customer
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── poetry.lock
+├── project_structure.txt
+├── pyproject.toml
+└── templates
+    ├── base.html
+    ├── contractor
+    │   ├── profile.html
+    │   └── register.html
+    ├── customer
+    │   ├── profile.html
+    │   └── register.html
+    └── home.html

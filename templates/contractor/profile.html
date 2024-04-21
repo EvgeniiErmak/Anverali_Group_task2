@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Contractor Profile{% endblock %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h4>Your Profile</h4>
+    </div>
+    <div class="card-body">
+        <p><strong>Name:</strong> {{ request.user.name }}</p>
+        <p><strong>Contact Info:</strong> {{ request.user.contact_info }}</p>
+        <p><strong>Experience:</strong> {{ request.user.experience }}</p>
+    </div>
+</div>
+{% endblock %}

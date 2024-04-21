@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home Page{% endblock %}
+
+{% block content %}
+    <h2>Welcome to Our Service Platform</h2>
+    <p>This platform allows customers and contractors to register and view their profiles.</p>
+    <div>
+        <h3>Get Started</h3>
+        <ul>
+            <li><a href="{% url 'register_customer' %}">Register as a Customer</a></li>
+            <li><a href="{% url 'register_contractor' %}">Register as a Contractor</a></li>
+        </ul>
+    </div>
+    <div>
+        <h3>Profiles</h3>
+        <ul>
+            <li><a href="{% url 'customer_profile' %}">View Customer Profile</a></li>
+            <li><a href="{% url 'contractor_profile' %}">View Contractor Profile</a></li>
+        </ul>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container">
+    <h1>Профиль не найден</h1>
+    <p>К сожалению, ваш профиль не был найден в нашей системе.</p>
+    <p>Возможно, ваш аккаунт еще не был полностью настроен или произошла ошибка. Если вы считаете, что это ошибка, пожалуйста, свяжитесь с поддержкой.</p>
+    <div>
+        <a href="{% url 'home' %}" class="btn btn-primary">Вернуться на главную</a>
+        <a href="mailto:support@example.com" class="btn btn-secondary">Связаться с поддержкой</a>
+    </div>
+</div>
+{% endblock %}
