@@ -1,59 +1,94 @@
-### Содержание `README.md`:
+---
 
-```markdown
 # Anverali_Group_task2
 
-## Описание проекта
-Anverali_Group_task2 — это веб-приложение на Django, предназначенное для регистрации и управления профилями подрядчиков и клиентов. Приложение позволяет пользователям регистрироваться, входить в систему и просматривать профили.
+Это второй проект в рамках задачи для Anverali Group. Проект представляет собой веб-приложение для регистрации пользователей в двух категориях: заказчиков (Customers) и подрядчиков (Contractors).
 
-## Технологический стек
-- Python 3.8+
-- Django 5.0.4
-- PostgreSQL
+## Структура проекта
 
-## Установка и запуск
+```
+Anverali_Group_task2/
+├── Anverali_Group_task2/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── README.md
+├── contractor/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── customer/
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── forms.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── poetry.lock
+├── project_structure.txt
+├── pyproject.toml
+└── templates/
+    ├── base.html
+    ├── contractor/
+    │   ├── profile.html
+    │   └── register.html
+    ├── customer/
+    │   ├── profile.html
+    │   └── register.html
+    └── home.html
+```
 
-### Предварительные требования
-Для работы с проектом вам необходимо установить Python и Poetry. Также вам потребуется настроенная база данных PostgreSQL.
+## Инструкции по установке и запуску
 
-### Клонирование репозитория
-```bash
-git clone https://example.com/Anverali_Group_task2.git
+1. Убедитесь, что у вас установлен Python версии 3.x и установлен Poetry.
+
+2. Склонируйте репозиторий:
+
+```
+git clone https://github.com/DJErmak3000/Anverali_Group_task2.git
+```
+
+3. Перейдите в директорию проекта:
+
+```
 cd Anverali_Group_task2
 ```
 
-### Установка зависимостей
-```bash
+4. Установите зависимости:
+
+```
 poetry install
 ```
 
-### Настройка базы данных
-Убедитесь, что в `settings.py` указаны правильные данные для подключения к базе данных PostgreSQL.
+5. Примените миграции:
 
-### Применение миграций
-```bash
-poetry run python manage.py makemigrations
+```
 poetry run python manage.py migrate
 ```
 
-### Запуск сервера
-```bash
+6. Запустите сервер:
+
+```
 poetry run python manage.py runserver
 ```
 
+7. Откройте браузер и перейдите по адресу [http://127.0.0.1:8000/](http://127.0.0.1:8000/) для доступа к приложению.
+
 ## Контакты автора
 
-**Евгений Ермак**
+Автор: Евгений Ермак
+Телефон: +7 930-290-99-80
+Telegram: [@DJErmak3000](https://t.me/DJErmak3000)
+Email: [ew.ermak5000@mail.ru](mailto:ew.ermak5000@mail.ru)
 
-- Телефон: +7 930-290-99-80
-- Telegram: [DJErmak3000](https://t.me/DJErmak3000)
-- E-mail: [ew.ermak5000@mail.ru](mailto:ew.ermak5000@mail.ru)
-
-## Лицензия
-Данный проект распространяется под лицензией MIT. Подробности вы можете найти в файле `LICENSE`.
-```
-
-### Замечания:
-
-1. **URL репозитория**: Замените `https://example.com/Anverali_Group_task2.git` на актуальный URL вашего Git репозитория.
-2. **Лицензия**: Указано, что проект использует лицензию MIT, убедитесь, что это соответствует вашим требованиям и добавьте файл `LICENSE` в корень проекта, если его еще нет.
+---
